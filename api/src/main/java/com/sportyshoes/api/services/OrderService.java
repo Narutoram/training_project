@@ -1,0 +1,16 @@
+package com.sportyshoes.api.services;
+
+import java.util.List;
+
+import com.sportyshoes.api.entities.Order;
+
+public interface OrderService {
+
+	Order placeOrder(Long userId, Long productId);
+
+	List<Order> sortOrder(String key,String ordering);
+
+	List<Order> getAllOrderByUserId(Long userId);
+
+	List<Order> getAllOrderByProductId(Long productId);
+}
